@@ -1,0 +1,14 @@
+{
+    "name": "BugTracker",
+    "version": "1.0.0",
+    "description": "Bug Tracker",
+    "main": "main.js",
+    "author": "MagnusChase03",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "electron": "^17.0.1"
+    },
+    "scripts": {
+        "start": "electron ."
+    }
+}
