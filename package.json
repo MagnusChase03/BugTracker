@@ -1,0 +1,22 @@
+{
+    "name": "bugtracker",
+    "version": "1.0.0",
+    "description": "Bug Tracker",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start-watch": "nodemon index.js",
+        "dev": "concurrently \"npm run start-watch\" \"cd client && BROWSER=none npm start\""
+    },
+    "author": "magnuschase03",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "express": "^4.17.3",
+        "mongoose": "^6.2.10"
+    },
+    "devDependencies": {
+        "concurrently": "^7.1.0",
+        "nodemon": "^2.0.15"
+    }
+}
