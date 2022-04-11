@@ -8,6 +8,6 @@ const BugSchema = new Schema({
 });
 
 // Create model for bugs
-const Bugs = mongoose.model('Bugs', BugSchema);
+const Bugs = mongoose.model('bugs', BugSchema);
 
 module.exports = Bugs;
