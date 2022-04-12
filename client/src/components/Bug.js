@@ -8,10 +8,10 @@ const Bug = ({ bugs }) => {
 
             {bugs.map(bug => (
 
-                <div className="bugDetails">
+                <div className="bugDetails border border-3 border-info d-flex flex-row m-2 p-2 bg-dark text-white rounded-pill align-center">
 
-                    <h1 key={bug.bugName}>{bug.bugName}</h1>
-                    <p key={bug.bugDesc}>{bug.bugDesc}</p>
+                    <span key={bug.bugName} className="fs-2 ps-4 pe-2">{bug.bugName}</span>
+                    <span key={bug.bugDesc} className="px-2 my-3">{bug.bugDesc}</span>
 
                 </div>
 
