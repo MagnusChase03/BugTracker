@@ -9,6 +9,8 @@ This project was created to help keeep track of bugs within any coding project e
 ## Usage
 **Make sure you put your mongodb url into the .env file in the root directory.**
 
+`DB = 'mongodb://USER:PASSWORD@127.0.0.1:27017/DATABASE?authSource=admin'`
+
 First you will need to build the projects dependencies by running
 
 `npm build`
