@@ -7,6 +7,8 @@ This project was created to help keeep track of bugs within any coding project e
 * [License](#license)
 
 ## Usage
+**Make sure you put your mongodb url into the .env file in the root directory.**
+
 First you will need to build the projects dependencies by running
 
 `npm build`
