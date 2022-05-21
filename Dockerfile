@@ -1,6 +1,6 @@
-# Pull NodeJS, MongoDB
-# Setup MongoDB
-# Copy Over Files
-# Build node dependencies
-# Expose Ports
-# Run Application   
+FROM node
+WORKDIR /Code
+COPY . .
+EXPOSE 3000
+RUN npm install
+CMD ["npm", "start"]
