@@ -1,8 +1,18 @@
 version: "3.9"
 services:
   web:
+    depends_on:
+      - mongodb
     build: .
     ports:
       - "3000:3000"
     volumes:
       - .:/Code
+  mongodb:
+    image: mongo
+    env_file:
+      - mongodb.env
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db

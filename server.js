@@ -7,6 +7,21 @@ var body_parser = require('body-parser');
 var multer = require('multer');
 var form = multer();
 
+const MongoClient = require('mongodb').MongoClient;
+MongoClient.connect("mongodb://root:root@mongodb/test/?authSource=admin", (err, db) => {
+
+    if (err) {
+
+        console.log(err);
+
+    } else {
+
+        console.log("Connected to mongodb");
+
+    }
+
+});
+
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
